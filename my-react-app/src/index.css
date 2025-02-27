@@ -10,7 +10,6 @@ h1{
   text-align: center;
   font-size: 3rem;
   margin-bottom: 20px;
-
 }
 ol{
   list-style-type:none;
@@ -33,11 +32,7 @@ ul{
   gap: 20px;
   
 }
-
-
-
 li{
- 
   padding: 10px;
   background-color: rgb(57, 162, 192);
   cursor: pointer;
@@ -53,4 +48,38 @@ li{
   text-align: center;
   border-radius: 10px;
    box-shadow: 3px 3px rgb(25, 87, 88), -0.2em 0 .2em rgb(46, 163, 91);
+}
+
+.card{
+  max-width: 250px;
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  display: inline-block;
+  box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.3);
+  align-items: center;
+  text-align: center;
+  background-color: rgb(117, 208, 228);
+}
+
+.card .card-img{
+
+  background-color:white;
+  max-width: 60%;
+  height: auto;
+  border-radius: 50%;
+  margin-top: 10px;
+
+
+}
+.card .title{
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  color: rgb(232, 225, 225);
+}
+.card .detials{
+  margin-top: 10px;
+  color: rgb(47, 59, 70);
+
 }
