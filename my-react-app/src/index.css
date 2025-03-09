@@ -1,8 +1,4 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 body{
   background-color: beige;
 }
@@ -82,4 +78,9 @@ li{
   margin-top: 10px;
   color: rgb(47, 59, 70);
 
+}
+#root{
+  width: 100vw;
+  height: 100vh;
+  
 }
