@@ -1,28 +1,23 @@
-import {useState} from 'react';
-export default function Preservingandresettingstate(){
-    const counter=<Counter />;
-    return(
-        <div>
-            {counter}
-            {counter}
-        </div>
-    );
+import { useState } from 'react';
+import Chat from './Chat.js';
+import ContactList from './ContactList.js';
+
+export default function Messenger() {
+  const [to, setTo] = useState(contacts[0]);
+  return (
+    <div>
+      <ContactList
+        contacts={contacts}
+        selectedContact={to}
+        onSelect={contact => setTo(contact)}
+      />
+      <Chat contact={to} />
+    </div>
+  )
 }
-function Counter(){
-    const [score,setScore]=useState(0);
-    const [hover,setHover]=useState(false);
-    let className='counter';
-    if(hover){
-        className+='hover';
-    }
-    return(
-        <div
-        className={className}
-        onPointerEnter={()=>setHover(true)}
-        onPointerLeave={()=>setHover(false)}
-        >
-            <h1>{score}</h1>
-            <button onClick={()=>setScore(score+1)}>Click</button>
-        </div>
-    );
-}
+
+const contacts = [
+  { id: 0, name: 'Taylor', email: 'taylor@mail.com' },
+  { id: 1, name: 'Alice', email: 'alice@mail.com' },
+  { id: 2, name: 'Bob', email: 'bob@mail.com' }
+];
