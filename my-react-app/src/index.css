@@ -86,3 +86,11 @@ li{
   height: 100vh;
   
 }
+.Box{
+  display: flex;
+  width: 50vw;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(117, 208, 228);
+}
