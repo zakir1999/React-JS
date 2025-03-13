@@ -1,12 +1,12 @@
 import React from 'react';
 import './index.css';
-import TaskApp from '../../Reactin to Input with state/Consolidatereducer.jsx';
-import ComponentA from '../../Use Context/ComponentA.jsx';
-import Stopwatch from './Stopwatch.jsx';
+import Sharing from '../../Managing State/Without Lifting State Up';
+import WithLifitingStateUp from '../../Managing State/With Lifiting Sate up';
 function App() {
   return (
   <>
-  <Stopwatch/>
+  <Sharing/>
+  <WithLifitingStateUp/>
   </>
 );
   
